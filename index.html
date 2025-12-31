@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="index2.css" /> -->
+    <title>Form</title>
+</head>
+<style>
+    body {
+    background-image: url(Images/bgimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px; 
+}
+fieldset {
+    width: 400px;
+    height: 520px;
+   background-color: aliceblue;
+   border: solid 1px;
+   box-shadow: 2px 2px 15px;
+   padding: 0;
+}
+legend {
+    background-color: #0134cc;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 10px;
+    
+}
+.input {
+    background-color: white;
+    width: 68%;
+    height: 40px;
+    margin-left: 55px;
+    box-shadow: 0px 0px 3px;
+    display: block;
+    margin: 20px auto 3px auto;
+    padding-left: 10px;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+}
+input:focus {
+    border-radius: 5px;
+    width: 75%;
+}
+input:hover {
+    box-shadow: 0px 0px 8px;
+}
+button {
+    width: 70%;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 10px;
+    margin-top: 20px;
+    background-color: #033dec;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+button:hover {
+    box-shadow: 0px 0px 6px black;
+    width: 73%;
+    height: 52px;
+}
+button:focus {
+    width: 80%;
+    height: 60px;
+}
+#a1 {
+    margin-left: 58px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#a1:hover {
+    text-decoration: underline;
+}
+p {
+    text-align: center;
+    margin-top: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#a2 {
+    text-decoration: none;
+    font-size: 16px;
+}
+#a2:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+<div>
+    <form method="GET">
+        <fieldset>
+        <legend>Login Form</legend>
+            <input type="text" class="input" id="border" placeholder="Enter Username" required />
+            <input type="email" class="input" id="border" placeholder="Enter Email" required />
+            <input type="password" class="input" id="border" placeholder="Enter password" required />
+            <a href="#" id="a1">forgot password?</a>
+            <button type="submit">Submit</button>
+            <p>Doesn't have an account? <a id="a2" href="#">Create One</a></p>
+        </fieldset>
+    </form>  
+</div>
+</body>
+</html>
